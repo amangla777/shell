@@ -1,0 +1,3110 @@
+[33mcommit ca83663eff5272a4edd981df900b49bee96832ff[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;33mtag: part1[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Aarav Mangla <mangla1@data.cs.purdue.edu>
+Date:   Mon Jan 27 22:56:41 2025 -0500
+
+    part1 done
+
+[1mdiff --git a/.local.git.out b/.local.git.out[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dbd72db[m
+[1m--- /dev/null[m
+[1m+++ b/.local.git.out[m
+[36m@@ -0,0 +1,2958 @@[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master cc37a66] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 65 insertions(+), 1 deletion(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master f3b71b3] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 73 insertions(+), 60 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master accd147] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 4 insertions(+), 11 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master e5190a2] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 116 insertions(+), 12 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 347c43e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 47 insertions(+), 1 deletion(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 6c6f04b] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 13 insertions(+), 58 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 045a68e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 56 insertions(+), 16 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master fb6aa21] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 93 insertions(+), 77 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 7123551] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 52 insertions(+), 146 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 43ca96e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 32 insertions(+), 52 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 3a4ec54] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 62 insertions(+), 130 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master b542dc8] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 8 insertions(+), 57 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 37de5cf] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 115 insertions(+), 2 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master a78ec70] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 1 insertion(+), 9 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 831caf5] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 26 insertions(+), 9 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 9c997a0] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 2 insertions(+), 2 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master c63e3b8] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 7 insertions(+), 13 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 41a743f] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 122 insertions(+), 95 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 30df6a0] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 18 insertions(+), 74 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 73c219c] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 2 insertions(+), 88 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 7651995] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 90 insertions(+), 2 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 0eb35d7] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 28 insertions(+)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 5fe7911] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 126 insertions(+), 61 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master c48237e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master c4fc744] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 66 insertions(+), 55 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master f86835c] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 31 insertions(+), 38 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 07bcf04] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 23 insertions(+), 28 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master a869f13] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 46 insertions(+), 44 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 3c177e9] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 55 insertions(+), 120 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 3942882] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 43 insertions(+), 63 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 8ea6ff8] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 5 insertions(+), 4 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master aec5f7c] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 94 insertions(+), 40 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master f5b7e44] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 26 insertions(+), 22 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 9540ad6] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 2 insertions(+), 2 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master c2d9404] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 21 insertions(+), 24 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 3cc253c] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 19 insertions(+), 20 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 3c4266e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 48 insertions(+), 38 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 321bba4] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 40 insertions(+), 36 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 8d8b99a] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 29 insertions(+), 32 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 63b7c0a] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 8 insertions(+), 15 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master f173d08] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 26 insertions(+), 26 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 981b730] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 16 insertions(+), 9 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 4ae8a8d] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 9 insertions(+), 16 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master de7c637] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 15 insertions(+), 12 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 29d00b5] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 16 insertions(+), 12 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 96cb93e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 18 insertions(+), 18 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 77a65e2] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 1 insertion(+), 1 deletion(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mM	myMalloc.c[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32m[master 4c2f75e] Commit[m
+[32m+[m[32m Committer: Aarav Mangla <mangla1@data.cs.purdue.edu>[m
+[32m+[m[32mYour name and email address were configured automatically based[m
+[32m+[m[32mon your username and hostname. Please check that they are accurate.[m
+[32m+[m[32mYou can suppress this message by setting them explicitly. Run the[m
+[32m+[m[32mfollowing command and follow the instructions in your editor to edit[m
+[32m+[m[32myour configuration file:[m
+[32m+[m
+[32m+[m[32m    git config --global --edit[m
+[32m+[m
+[32m+[m[32mAfter doing this, you may fix the identity used for this commit with:[m
+[32m+[m
+[32m+[m[32m    git commit --amend --reset-author[m
+[32m+[m
+[32m+[m[32m 1 file changed, 18 insertions(+), 8 deletions(-)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m	[32mexamples/composite_ex[m
+[32m+[m	[32mexamples/constructor_ex[m
+[32m+[m	[32mtests/test_all_lists[m
+[32m+[m	[32mtests/test_coalesce_chunk_coalesce[m
+[32m+[m	[32mtests/test_coalesce_chunk_insert[m
+[32m+[m	[32mtests/test_corrupted_canary[m
+[32m+[m	[32mtests/test_double_free[m
+[32m+[m	[32mtests/test_exact[m
+[32m+[m	[32mtests/test_free_both[m
+[32m+[m	[32mtests/test_free_even[m
+[32m+[m	[32mtests/test_free_insert[m
+[32m+[m	[32mtests/test_free_left[m
+[32m+[m	[32mtests/test_free_null[m
+[32m+[m	[32mtests/test_free_odd[m
+[32m+[m	[32mtests/test_free_right[m
+[32m+[m	[32mtests/test_insert_chunk[m
+[32m+[m	[32mtests/test_large[m
+[32m+[m	[32mtests/test_locks[m
+[32m+[m	[32mtests/test_malloc_large[m
+[32m+[m	[32mtests/test_malloc_too_large[m
+[32m+[m	[32mtests/test_malloc_zero[m
+[32m+[m	[32mtests/test_multi_malloc[m
+[32m+[m	[32mtests/test_out_of_ram[m
+[32m+[m	[32mtests/test_random[m
+[32m+[m	[32mtests/test_random_sizes[m
+[32m+[m	[32mtests/test_simple0[m
+[32m+[m	[32mtests/test_simple1[m
+[32m+[m	[32mtests/test_simple2[m
+[32m+[m	[32mtests/test_simple3[m
+[32m+[m	[32mtests/test_simple4[m
+[32m+[m	[32mtests/test_simple5[m
+[32m+[m	[32mtests/test_simple6[m
+[32m+[m	[32mtests/test_split[m
+[32m+[m	[32mtests/test_verify[m
+[32m+[m	[32mtests/test_very_large[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m[32mOn branch master[m
+[32m+[m[32mYour branch is up to date with 'origin/master'.[m
+[32m+[m
+[32m+[m[32mUntracked files:[m
+[32m+[m[32m  (use "git add <file>..." to include in what will be committed)[m
+[32m+[m	[32m.local.git.out[m
+[32m+[m
+[32m+[m[32mnothing added to commit but untracked files present (use "git add" to track)[m
+[1mdiff --git a/examples/composite_ex b/examples/composite_ex[m
+[1mnew file mode 100755[m
+[1mindex 0000000..1ed997c[m
+Binary files /dev/null and b/examples/composite_ex differ
+[1mdiff --git a/examples/constructor_ex b/examples/constructor_ex[m
+[1mnew file mode 100755[m
+[1mindex 0000000..83b2d9c[m
+Binary files /dev/null and b/examples/constructor_ex differ
+[1mdiff --git a/tests/test_all_lists b/tests/test_all_lists[m
+[1mnew file mode 100755[m
+[1mindex 0000000..1c5ae38[m
+Binary files /dev/null and b/tests/test_all_lists differ
+[1mdiff --git a/tests/test_coalesce_chunk_coalesce b/tests/test_coalesce_chunk_coalesce[m
+[1mnew file mode 100755[m
+[1mindex 0000000..88f0c91[m
+Binary files /dev/null and b/tests/test_coalesce_chunk_coalesce differ
+[1mdiff --git a/tests/test_coalesce_chunk_insert b/tests/test_coalesce_chunk_insert[m
+[1mnew file mode 100755[m
+[1mindex 0000000..e3a9b94[m
+Binary files /dev/null and b/tests/test_coalesce_chunk_insert differ
+[1mdiff --git a/tests/test_corrupted_canary b/tests/test_corrupted_canary[m
+[1mnew file mode 100755[m
+[1mindex 0000000..b2dffd9[m
+Binary files /dev/null and b/tests/test_corrupted_canary differ
+[1mdiff --git a/tests/test_double_free b/tests/test_double_free[m
+[1mnew file mode 100755[m
+[1mindex 0000000..0913981[m
+Binary files /dev/null and b/tests/test_double_free differ
+[1mdiff --git a/tests/test_exact b/tests/test_exact[m
+[1mnew file mode 100755[m
+[1mindex 0000000..e6abd8e[m
+Binary files /dev/null and b/tests/test_exact differ
+[1mdiff --git a/tests/test_free_both b/tests/test_free_both[m
+[1mnew file mode 100755[m
+[1mindex 0000000..b237077[m
+Binary files /dev/null and b/tests/test_free_both differ
+[1mdiff --git a/tests/test_free_even b/tests/test_free_even[m
+[1mnew file mode 100755[m
+[1mindex 0000000..6164ab7[m
+Binary files /dev/null and b/tests/test_free_even differ
+[1mdiff --git a/tests/test_free_insert b/tests/test_free_insert[m
+[1mnew file mode 100755[m
+[1mindex 0000000..7df9ac6[m
+Binary files /dev/null and b/tests/test_free_insert differ
+[1mdiff --git a/tests/test_free_left b/tests/test_free_left[m
+[1mnew file mode 100755[m
+[1mindex 0000000..3667e7a[m
+Binary files /dev/null and b/tests/test_free_left differ
+[1mdiff --git a/tests/test_free_null b/tests/test_free_null[m
+[1mnew file mode 100755[m
+[1mindex 0000000..c98741f[m
+Binary files /dev/null and b/tests/test_free_null differ
+[1mdiff --git a/tests/test_free_odd b/tests/test_free_odd[m
+[1mnew file mode 100755[m
+[1mindex 0000000..037f03e[m
+Binary files /dev/null and b/tests/test_free_odd differ
+[1mdiff --git a/tests/test_free_right b/tests/test_free_right[m
+[1mnew file mode 100755[m
+[1mindex 0000000..86f14c0[m
+Binary files /dev/null and b/tests/test_free_right differ
+[1mdiff --git a/tests/test_insert_chunk b/tests/test_insert_chunk[m
+[1mnew file mode 100755[m
+[1mindex 0000000..81c2f12[m
+Binary files /dev/null and b/tests/test_insert_chunk differ
+[1mdiff --git a/tests/test_large b/tests/test_large[m
+[1mnew file mode 100755[m
+[1mindex 0000000..d04c572[m
+Binary files /dev/null and b/tests/test_large differ
+[1mdiff --git a/tests/test_locks b/tests/test_locks[m
+[1mnew file mode 100755[m
+[1mindex 0000000..44d5c0e[m
+Binary files /dev/null and b/tests/test_locks differ
+[1mdiff --git a/tests/test_malloc_large b/tests/test_malloc_large[m
+[1mnew file mode 100755[m
+[1mindex 0000000..91bb83d[m
+Binary files /dev/null and b/tests/test_malloc_large differ
+[1mdiff --git a/tests/test_malloc_too_large b/tests/test_malloc_too_large[m
+[1mnew file mode 100755[m
+[1mindex 0000000..9e7937d[m
+Binary files /dev/null and b/tests/test_malloc_too_large differ
+[1mdiff --git a/tests/test_malloc_zero b/tests/test_malloc_zero[m
+[1mnew file mode 100755[m
+[1mindex 0000000..cf4317b[m
+Binary files /dev/null and b/tests/test_malloc_zero differ
+[1mdiff --git a/tests/test_multi_malloc b/tests/test_multi_malloc[m
+[1mnew file mode 100755[m
+[1mindex 0000000..f3b53cf[m
+Binary files /dev/null and b/tests/test_multi_malloc differ
+[1mdiff --git a/tests/test_out_of_ram b/tests/test_out_of_ram[m
+[1mnew file mode 100755[m
+[1mindex 0000000..b564bf5[m
+Binary files /dev/null and b/tests/test_out_of_ram differ
+[1mdiff --git a/tests/test_random b/tests/test_random[m
+[1mnew file mode 100755[m
+[1mindex 0000000..8510a22[m
+Binary files /dev/null and b/tests/test_random differ
+[1mdiff --git a/tests/test_random_sizes b/tests/test_random_sizes[m
+[1mnew file mode 100755[m
+[1mindex 0000000..2ae83ae[m
+Binary files /dev/null and b/tests/test_random_sizes differ
+[1mdiff --git a/tests/test_simple0 b/tests/test_simple0[m
+[1mnew file mode 100755[m
+[1mindex 0000000..798936d[m
+Binary files /dev/null and b/tests/test_simple0 differ
+[1mdiff --git a/tests/test_simple1 b/tests/test_simple1[m
+[1mnew file mode 100755[m
+[1mindex 0000000..dc5e88e[m
+Binary files /dev/null and b/tests/test_simple1 differ
+[1mdiff --git a/tests/test_simple2 b/tests/test_simple2[m
+[1mnew file mode 100755[m
+[1mindex 0000000..3594dc4[m
+Binary files /dev/null and b/tests/test_simple2 differ
+[1mdiff --git a/tests/test_simple3 b/tests/test_simple3[m
+[1mnew file mode 100755[m
+[1mindex 0000000..97e17fa[m
+Binary files /dev/null and b/tests/test_simple3 differ
+[1mdiff --git a/tests/test_simple4 b/tests/test_simple4[m
+[1mnew file mode 100755[m
+[1mindex 0000000..0e02678[m
+Binary files /dev/null and b/tests/test_simple4 differ
+[1mdiff --git a/tests/test_simple5 b/tests/test_simple5[m
+[1mnew file mode 100755[m
+[1mindex 0000000..bd9d4de[m
+Binary files /dev/null and b/tests/test_simple5 differ
+[1mdiff --git a/tests/test_simple6 b/tests/test_simple6[m
+[1mnew file mode 100755[m
+[1mindex 0000000..e8d1f6a[m
+Binary files /dev/null and b/tests/test_simple6 differ
+[1mdiff --git a/tests/test_split b/tests/test_split[m
+[1mnew file mode 100755[m
+[1mindex 0000000..c698039[m
+Binary files /dev/null and b/tests/test_split differ
+[1mdiff --git a/tests/test_verify b/tests/test_verify[m
+[1mnew file mode 100755[m
+[1mindex 0000000..84f5fb0[m
+Binary files /dev/null and b/tests/test_verify differ
+[1mdiff --git a/tests/test_very_large b/tests/test_very_large[m
+[1mnew file mode 100755[m
+[1mindex 0000000..67fb089[m
+Binary files /dev/null and b/tests/test_very_large differ

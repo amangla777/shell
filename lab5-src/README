@@ -1,0 +1,52 @@
+# myhttpd — A Simple HTTP Server
+
+## Features Implemented
+
+These items were specified in the lab handout and are fully supported:
+
+- **Static file serving**  
+  — Serves files from `http-root-dir/htdocs` with correct `Content-Type` and `Content-Length`.
+- **Directory listings**  
+  — Generates HTML indexes under `/dir/` showing Name, Last Modified, Size, Description.
+  — Sortable by name (`C=N`), timestamp (`C=M`), or size (`C=S`), ascending or descending.
+- **Icons**  
+  — Displays custom GIF icons for files, directories, and “Parent Directory” links (`htdocs/icons/`).
+- **CGI support**  
+  — Executes executables in `http-root-dir/cgi-bin/` (e.g. `pizza` / `jj`) and merges their own headers.
+- **Basic authentication**  
+  — Blocks any request lacking `Authorization: Basic <token>` with a `401 Unauthorized`.
+- **Slash‐redirect for directories**  
+  — Automatically 301‐redirects `/foo` → `/foo/` when `foo` is a directory.
+- **Statistics endpoint (`/stats`)**  
+  — Shows student name, uptime in seconds, total requests, min & max service times (with URLs).
+- **Log endpoint (`/logs`)**  
+  — Appends every request to `http-root-dir/logs` as `hostname:/path` and serves it as plain text.
+- **Concurrency modes**  
+  — Iterative (default), fork-on-each-connection (`-f`), thread-per-connection (`-t`), and fixed thread‐pool (`-p`).
+
+## Features Not Implemented
+
+The following handout items remain unaddressed:
+
+- **HTTP HEAD requests** — only `GET` is supported; other methods return no response.  
+- **Persistent (keep-alive) connections** — each request closes the socket immediately.  
+- **Range requests / partial content** — no support for `Range` headers or `206 Partial Content`.  
+- **Conditional GET** — headers like `If-Modified-Since` / `304 Not Modified` are not recognized.  
+- **POST / PUT** — only read‐only file serving and CGI‐GET are implemented.  
+
+## Extra Features
+
+These enhancements go beyond the basic lab requirements:
+
+- **Unknown‐extension fallback**  
+  — Serves any unrecognized file extension as `text/plain` instead of forcing a download.  
+- **Symlinked CGI binaries**  
+  — Allows a single `pizza` binary to be accessed as both `/cgi-bin/pizza` and `/cgi-bin/jj`.  
+- **Robust parent‐directory link**  
+  — Displays “Parent Directory” instead of “..” and computes the correct `href` up one level.  
+- **GIF-based icons**  
+  — Adaptation to GIF icons in `htdocs/icons/` (instead of the `.xbm` files from the sample).  
+- **Improved logging format**  
+  — Logs include the exact request URL (with or without query) and hostname for easier post‐mortem.  
+- **Configurable server name and port**  
+  — `SERVER_NAME` and default port (8888) are constants; port can be overridden via command-line.
