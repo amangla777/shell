@@ -1,0 +1,13 @@
+munmap(0x7f284b621000, 185643)          = 0
+write(1, "Hello World without syscall\n", 28) = 28
+^^^^ write ^^^^^
+write(1, "Hello World with syscall\n", 25) = 25
+^^^^ syscall ^^^^^
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x188), ...}, AT_EMPTY_PATH) = 0
+getrandom("\x35\x15\x9b\x13\x20\xe8\xe2\xf7", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5641706fe000
+brk(0x56417071f000)                     = 0x56417071f000
+write(1, "Hello World with printf\n", 24) = 24
+^^^^ printf ^^^^
+exit_group(24)                          = ?
++++ exited with 24 +++
